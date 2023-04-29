@@ -11,6 +11,10 @@ import { FundDepositComponent } from './fund-deposit/fund-deposit.component';
 import { FundWithdrawComponent } from './fund-withdraw/fund-withdraw.component';
 import { AccountStatementComponent } from './account-statement/account-statement.component';
 import { AccountStatementDetailsComponent } from './account-statement-details/account-statement-details.component';
+import { RegisterCustomerComponent } from './register-customer/register-customer.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { AccountListComponent } from './account-list/account-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { AccountStatementDetailsComponent } from './account-statement-details/ac
     FundDepositComponent,
     FundWithdrawComponent,
     AccountStatementComponent,
-    AccountStatementDetailsComponent
+    AccountStatementDetailsComponent,
+    RegisterCustomerComponent,
+    CreateAccountComponent,
+    CustomerListComponent,
+    AccountListComponent
   ],
   imports: [
     BrowserModule,

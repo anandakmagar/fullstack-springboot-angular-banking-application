@@ -6,6 +6,7 @@ import com.banking.app.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -21,5 +22,10 @@ public class CustomerController {
     @GetMapping("/customers/{id}")
     public Customer getCustomerById(@PathVariable Long id) {
         return customerService.getCustomerById(id);
+    }
+
+    @GetMapping("/customers")
+    public List<Customer> getCustomers(){
+        return customerService.getCustomers();
     }
 }
