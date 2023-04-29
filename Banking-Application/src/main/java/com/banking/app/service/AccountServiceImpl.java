@@ -52,4 +52,9 @@ public class AccountServiceImpl implements AccountService {
         Account account = accountRepository.findById(accountNumber).get();
         return new AccountStatement(account.getAccountBalance(), account.getCustomer().getName(), transactionService.findTransactionsByAccountNumber(accountNumber));
     }
+
+    @Override
+    public void deleteAccountByAccountNumber(Long accountNumber) {
+        accountRepository.deleteById(accountNumber);
+    }
 }

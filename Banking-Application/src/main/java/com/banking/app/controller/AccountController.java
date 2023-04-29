@@ -32,4 +32,9 @@ public class AccountController {
     public AccountStatement getAccountStatementByAccountNumber(@PathVariable Long accountNumber) {
         return accountService.getAccountStatementByAccountNumber(accountNumber);
     }
+
+    @DeleteMapping("/accounts/{accountNumber}")
+    public void deleteAccountByAccountNumber(@PathVariable Long accountNumber){
+        accountService.deleteAccountByAccountNumber(accountNumber);
+    }
 }

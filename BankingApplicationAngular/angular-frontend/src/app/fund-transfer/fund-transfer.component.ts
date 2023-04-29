@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { TransactionService } from '../transaction.service';
 import { FundTransfer } from '../fund-transfer';
 import { Router } from '@angular/router';
-import { FundDeposit } from '../fund-deposit';
 
 @Component({
   selector: 'app-fund-transfer',

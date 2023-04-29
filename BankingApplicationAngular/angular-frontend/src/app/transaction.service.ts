@@ -4,9 +4,6 @@ import { FundTransfer } from './fund-transfer';
 import { Observable, catchError } from 'rxjs';
 import { FundDeposit } from './fund-deposit';
 import { FundWithdraw } from './fund-withdraw';
-import { AccountStatement } from './account-statement';
-import { AccountStatementRequest } from './account-statement-request';
-import { Transaction } from './transaction';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +11,7 @@ import { Transaction } from './transaction';
 export class TransactionService {
   
   url = "http://localhost:8080/transactions";
-  
+
   httpHeader = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
@@ -23,23 +20,23 @@ export class TransactionService {
   }
 
   transferFund(fundTransfer: FundTransfer): Observable<any> {
-    return this.httpClient.post<any>(`${this.url}/transfer`, fundTransfer, this.httpHeader);
+    return this.httpClient.post(`${this.url}/transfer`, fundTransfer, this.httpHeader);
   }
 
   depositFund(fundDeposit: FundDeposit): Observable<any> {
-    return this.httpClient.post<any>(`${this.url}/deposit`, fundDeposit, this.httpHeader);
+    return this.httpClient.post(`${this.url}/deposit`, fundDeposit, this.httpHeader);
   }
 
   withdrawFund(fundWithdraw: FundWithdraw): Observable<any> {
-    return this.httpClient.post<any>(`${this.url}/withdraw`, fundWithdraw, this.httpHeader);
+    return this.httpClient.post(`${this.url}/withdraw`, fundWithdraw, this.httpHeader);
   }
 
   getAccountStatementsByAccountNumber(accountNumber: any): Observable<any> {
-    return this.httpClient.get<AccountStatement>(`${this.url}/statement/${accountNumber}`, this.httpHeader);
+    return this.httpClient.get(`${this.url}/statement/${accountNumber}`, this.httpHeader);
   }
 
   getTransactionsByAccountNumber(accountNumber: any): Observable<any> {
-    return this.httpClient.get<Transaction>(`${this.url}/${accountNumber}`, this.httpHeader);
+    return this.httpClient.get(`${this.url}/${accountNumber}`, this.httpHeader);
   }
 
 }

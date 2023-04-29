@@ -10,6 +10,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { AccountListComponent } from './account-list/account-list.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DeleteAccountComponent } from './delete-account/delete-account.component';
 
 const routes: Routes = [
   {path: "deposit", component: FundDepositComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'create-account', component: CreateAccountComponent},
   {path: 'customer-list', component: CustomerListComponent},
   {path: 'account-list', component: AccountListComponent},
-  {path: 'nav-bar', component: NavBarComponent}
+  {path: 'nav-bar', component: NavBarComponent},
+  {path: 'delete-account/:accountNumber', component: DeleteAccountComponent}
 ];
 
 @NgModule({

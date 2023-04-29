@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AccountService } from '../account.service';
-import { Observable } from 'rxjs';
 import { Account } from '../account';
 import { Router } from '@angular/router';
 
@@ -10,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-account.component.css']
 })
 export class CreateAccountComponent {
+  
   constructor(private service: AccountService, private router: Router){}
 
   account: Account = new Account();

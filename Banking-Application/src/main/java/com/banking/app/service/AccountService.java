@@ -14,4 +14,5 @@ public interface AccountService {
     public List<Account> getAccounts();
     public Account getAccountByAccountNumber(Long accountNumber);
     public AccountStatement getAccountStatementByAccountNumber(Long accountNumber);
+    public void deleteAccountByAccountNumber(Long accountNumber);
 }

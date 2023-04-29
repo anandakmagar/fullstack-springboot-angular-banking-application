@@ -11,11 +11,15 @@ export class AccountService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getAccountList(): Observable<Account[]>{
-    return this.httpClient.get<Account[]>(`${this.url}`);
+  getAccountList(): Observable<any>{
+    return this.httpClient.get(`${this.url}`);
   }
 
-  createAccount(account: Account): Observable<Account>{
-    return this.httpClient.post<Account>(`${this.url}`, account);
+  createAccount(account: Account): Observable<any>{
+    return this.httpClient.post(`${this.url}`, account);
+  }
+
+  DeleteAccountByAccountNumber(accountNumber: number): Observable<any>{
+    return this.httpClient.delete(`${this.url}/${accountNumber}`);
   }
 }

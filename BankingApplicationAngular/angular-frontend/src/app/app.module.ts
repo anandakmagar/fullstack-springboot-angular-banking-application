@@ -15,6 +15,7 @@ import { RegisterCustomerComponent } from './register-customer/register-customer
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { AccountListComponent } from './account-list/account-list.component';
+import { DeleteAccountComponent } from './delete-account/delete-account.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AccountListComponent } from './account-list/account-list.component';
     RegisterCustomerComponent,
     CreateAccountComponent,
     CustomerListComponent,
-    AccountListComponent
+    AccountListComponent,
+    DeleteAccountComponent
   ],
   imports: [
     BrowserModule,
