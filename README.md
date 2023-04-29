@@ -1,5 +1,5 @@
-fullstack-springboot-angular-banking-application
-------------------------------------------------
+FullStack Baking Application with Spring Boot and Angular
+---------------------------------------------------------
 This is a fullstack banking app developed using Java, Spring Boot, MySQL, and Angular
 
 This application mimics the dashboard for bank employees. In this application, bank employee can
@@ -36,3 +36,4 @@ UI Screenshots
 ![6](https://user-images.githubusercontent.com/107140001/235326559-5b5e218e-4010-43bf-af90-911292372e4f.png)
 ![7](https://user-images.githubusercontent.com/107140001/235326561-4db0ce34-8d82-4be5-ab72-5025b296dfa8.png)
 ![8](https://user-images.githubusercontent.com/107140001/235326562-241d88a9-91e1-4a9b-914b-e561769af968.png)
+![9](https://user-images.githubusercontent.com/107140001/235326648-db8226ce-6f0a-42cb-860b-5fadb4ce742e.png)
